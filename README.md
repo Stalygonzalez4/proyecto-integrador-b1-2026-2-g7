@@ -1,0 +1,1 @@
+# proyecto-integrador-b1-2026-2-g7
