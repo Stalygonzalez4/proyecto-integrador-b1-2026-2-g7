@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # My Application README
 
 - [ ] TODO Replace or update this README with instructions relevant to your application
@@ -32,3 +33,6 @@ docker build --secret id=proKey,src=$HOME/.vaadin/proKey .
 The [Quick Start](https://vaadin.com/docs/v25/getting-started/quick-start) tutorial helps you get started with Vaadin in 
 around 10 minutes. This tutorial walks you through building a simple application, introducing the core concepts along 
 the way.
+=======
+# proyecto-integrador-b1-2026-2-g7
+>>>>>>> 4747bbd1aeeb106ce8a1c36742873f3fb78d206f
