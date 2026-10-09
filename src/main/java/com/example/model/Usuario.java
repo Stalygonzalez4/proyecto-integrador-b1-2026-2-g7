@@ -1,127 +1,108 @@
 package com.example.model;
 
-import java.time.LocalDateTime;
 
 public class Usuario {
-    private Long id; // para que sea autogenerado por la BD
-    private String nombre;
-    private String apellido;
-    private String email;
-    private String telefono;
-    private String direccion;
-    private String rol; // 'admin', 'usuario', etc.
-    private String estado; // 'activo', 'inactivo', 'baneado'
-    private LocalDateTime fechaRegistro;
+    private int id; 
+    private String Nombre;
+    private String Apellido;
+    private String Documento;
+    private String Email;
+    private String Telefono;
+    private String Contraseña;
+    private boolean Activo;
 
-    // ===================
-    // Constructor completo
-    // ===================
-    public Usuario(Long id, String nombre, String apellido, String email, String telefono,
-            String direccion, String rol, String estado, LocalDateTime fechaRegistro) {
-        this.id = id;
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.email = email;
-        this.telefono = telefono;
-        this.direccion = direccion;
-        this.rol = rol;
-        this.estado = estado;
-        this.fechaRegistro = fechaRegistro;
-    }
-
-    // ===================
-    // Constructor sin ID
-    // (para insertar nuevos usuarios sin ID)
-    // ===================
-    public Usuario(String nombre, String apellido, String email, String telefono,
-            String direccion, String rol, String estado, LocalDateTime fechaRegistro) {
-        this(null, nombre, apellido, email, telefono, direccion, rol, estado, fechaRegistro);
-    }
-
-    // ===================
-    // Constructor vacío
-    // ===================
     public Usuario() {
-        this.fechaRegistro = LocalDateTime.now();
     }
 
-    // ===================
-    // Getters y setters
-    // ===================
-    public Long getId() {
+    public Usuario(int id, String Nombre, String Apellido, String Documento, String Email, String Telefono, String Contraseña, boolean Activo) {
+        this.id = id;
+        this.Nombre = Nombre;
+        this.Apellido = Apellido;
+        this.Documento = Documento;
+        this.Email = Email;
+        this.Telefono = Telefono;
+        this.Contraseña = Contraseña;
+        this.Activo = Activo;
+    }
+
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
+
     public String getNombre() {
-        return nombre;
+        return Nombre;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombre(String Nombre) {
+        this.Nombre = Nombre;
     }
+
 
     public String getApellido() {
-        return apellido;
+        return Apellido;
     }
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
+
+    public void setApellido(String Apellido) {
+        this.Apellido = Apellido;
     }
+
 
     public String getEmail() {
-        return email;
+        return this.Email       ;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setEmail(String Email) {
+        this.Email = Email;
     }
 
     public String getTelefono() {
-        return telefono;
+        return this.Telefono;
     }
 
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
+    public void setTelefono(String Telefono) {
+        this.Telefono = Telefono;
     }
 
-    public String getDireccion() {
-        return direccion;
+    public String getContraseña() {
+        return this.Contraseña;
     }
 
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
+    public void setContraseña(String Contraseña) {
+        this.Contraseña = Contraseña;
     }
 
-    public String getRol() {
-        return rol;
+    public boolean isActivo() {
+        return this.Activo;
     }
 
-    public void setRol(String rol) {
-        this.rol = rol;
+    public boolean getActivo() {
+        return this.Activo;
     }
 
-    public String getEstado() {
-        return estado;
+    public void setActivo(boolean Activo) {
+        this.Activo = Activo;
     }
 
-    public void setEstado(String estado) {
-        this.estado = estado;
+
+    public String getDocumento() {
+        return Documento;
     }
 
-    public LocalDateTime getFechaRegistro() {
-        return fechaRegistro;
+
+    public void setDocumento(String Documento) {
+        this.Documento = Documento;
     }
 
-    public void setFechaRegistro(LocalDateTime fechaRegistro) {
-        this.fechaRegistro = fechaRegistro;
-    }
+
 
     @Override
     public String toString() {
-        return "Usuario [id=" + id + ", nombre=" + nombre + ", email=" + email + ", rol=" + rol + "]";
+        return "Usuario [id=" + id + ", nombre=" + nombre + ", email=" + email + ", Documento=" + Documento + ", telefono=" + telefono + ", Contraseña=" + Contraseña + ", Activo=" + Activo + "]";
     }
 }
