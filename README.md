@@ -200,7 +200,7 @@ Las relaciones se implementan mediante claves foráneas, que evitan registrar re
 
 El modelo de datos se representa mediante las tablas Usuarios, Equipos y Prestamos.
 
-![Diagrama entidad-relación del Sistema de Préstamo de Equipos](documentacion/diagrama-mer.png)
+![Diagrama entidad-relación del Sistema de Préstamo de Equipos](documentacion/DiagramaMER.png)
 
 
 ⚙️ Reglas de integridad
