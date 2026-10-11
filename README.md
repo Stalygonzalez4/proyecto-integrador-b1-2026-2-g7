@@ -200,8 +200,7 @@ Las relaciones se implementan mediante claves foráneas, que evitan registrar re
 
 El modelo de datos se representa mediante las tablas Usuarios, Equipos y Prestamos.
 
-Cuando agregues la imagen del diagrama al repositorio, puedes mostrarla aquí. Guarda el archivo, por ejemplo, en documentacion/diagrama-mer.png y utiliza esta línea:
-
+![Diagrama entidad-relación del Sistema de Préstamo de Equipos](documentacion/diagrama-mer.png)
 
 
 ⚙️ Reglas de integridad
@@ -260,11 +259,6 @@ mvnw.cmd package
 
 Antes de ejecutar estos comandos, verifica que tengas un JDK compatible y que la conexión con SQL Server esté configurada correctamente.
 
-4. Docker (opcional)
-
-Si el proyecto incluye un Dockerfile, puedes construir una imagen con:
-
-docker build -t sistema-prestamos-equipos:latest .
 
 📈 Alcance del proyecto
 
