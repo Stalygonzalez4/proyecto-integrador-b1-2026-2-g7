@@ -3,6 +3,7 @@ package com.example.model;
 
 public class Usuario {
     private int id; 
+    private String tipoDocumento;
     private String Nombre;
     private String Apellido;
     private String Documento;
@@ -14,8 +15,9 @@ public class Usuario {
     public Usuario() {
     }
 
-    public Usuario(int id, String Nombre, String Apellido, String Documento, String Email, String Telefono, String Contraseña, boolean Activo) {
+    public Usuario(int id, String tipoDocumento, String Nombre, String Apellido, String Documento, String Email, String Telefono, String Contraseña, boolean Activo) {
         this.id = id;
+        this.tipoDocumento = tipoDocumento; 
         this.Nombre = Nombre;
         this.Apellido = Apellido;
         this.Documento = Documento;
@@ -33,6 +35,14 @@ public class Usuario {
         this.id = id;
     }
 
+
+    public String getTipoDocumento() {
+        return tipoDocumento;
+    }
+
+    public void setTipoDocumento(String tipoDocumento) {
+        this.tipoDocumento = tipoDocumento;
+    }
 
     public String getNombre() {
         return Nombre;
@@ -103,6 +113,6 @@ public class Usuario {
 
     @Override
     public String toString() {
-        return "Usuario [id=" + id + ", nombre=" + nombre + ", email=" + email + ", Documento=" + Documento + ", telefono=" + telefono + ", Contraseña=" + Contraseña + ", Activo=" + Activo + "]";
+        return "Usuario [id=" + id + ", tipoDocumento=" + tipoDocumento + ", nombre=" + Nombre + ", email=" + Email + ", Documento=" + Documento + ", telefono=" + Telefono + ", Contraseña=" + Contraseña + ", Activo=" + Activo + "]";
     }
 }
