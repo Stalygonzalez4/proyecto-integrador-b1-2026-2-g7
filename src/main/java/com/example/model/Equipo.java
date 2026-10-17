@@ -5,13 +5,12 @@ public abstract class Equipo implements Identificable {
 
     private String numeroEquipo;
     private String modelo;
-    private String Estadoestado;
+    private String estado;
 
-    public Equipo(String numeroEquipo, String modelo,
-                  String estado) {
+    public Equipo(String numeroEquipo, String modelo, String estado) {
         this.numeroEquipo = numeroEquipo;
         this.modelo = modelo;
-        this.Estadoestado = estado;
+        this.estado = estado;
     }
 
     @Override
@@ -32,12 +31,13 @@ public abstract class Equipo implements Identificable {
     }
 
     public String getEstado() {
-        return Estadoestado;
+        return estado;
     }
 
     public void setEstado(String estado) {
-        this.Estadoestado = estado;
+        this.estado = estado;
     }
 
     public abstract String getDescripcion();
 }
+
